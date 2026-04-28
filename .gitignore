@@ -1,0 +1,4 @@
+#忽略build，因为这是编译过程的中间产物
+build
+
+__pycache__
