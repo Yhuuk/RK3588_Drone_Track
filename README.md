@@ -1,10 +1,23 @@
 #   RK3588的Yolo + ByteTrack
 
 ## 1.   图片注释及说明:
-- ***跳帧+卡尔曼预测***：// @link@:images/跳帧+卡尔曼预测.png
+- ***跳帧+卡尔曼预测***
+<p align="center">
+  <img src="assets/images/跳帧+卡尔曼预测.png" alt="跳帧 + 卡尔曼预测流程图" width="300">
+</p>
+
+<p align="center">
+  <b>图 1：跳帧 + 卡尔曼预测流程图</b>
+</p>
 
 - PF16量化成INT8
-![alt text](assets/images/PF16_to_INT8_condition.png)
+<p align="center">
+  <img src="assets/images/PF16_to_INT8_condition.png" alt="PF16转INT8的量化图片要求" width="400">
+</p>
+
+<p align="center">
+  <b>图 2：PF16转INT8的量化图片要求</b>
+</p>
 
 ## 2.   ONXX导出RKNN的python脚本：
 ```py
@@ -61,4 +74,3 @@ rknn.release()
 - **ONNX inputs:**  images [1, 3, 512, 640]
 
 
-![alt text](99069e87f1d419c4d792d7facfb93e26.png)
